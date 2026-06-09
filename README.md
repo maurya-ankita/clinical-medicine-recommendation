@@ -30,7 +30,7 @@ The entire architecture is decoupled into an enterprise-ready format, featuring 
 
 The system workflow is structured into isolated structural layers to decouple model dependencies from serving environments:
 
-
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                 Unstructured Clinical Text Input            │
 │  "Patient presents with elevated blood sugar levels..."     │
