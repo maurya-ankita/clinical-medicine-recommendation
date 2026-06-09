@@ -30,7 +30,7 @@ The entire architecture is decoupled into an enterprise-ready format, featuring 
 
 The system workflow is structured into isolated structural layers to decouple model dependencies from serving environments:
 
-```text
+
 ┌─────────────────────────────────────────────────────────────┐
 │                 Unstructured Clinical Text Input            │
 │  "Patient presents with elevated blood sugar levels..."     │
@@ -57,8 +57,9 @@ The system workflow is structured into isolated structural layers to decouple mo
 │   (Port: 8000 /predict)         (Real-time Visualization)   │
 └─────────────────────────────────────────────────────────────┘
 
+---
 
-##Project Structure
+## Project Structure
 
 clinical-medicine-recommendation/
 ├── data/
@@ -77,7 +78,8 @@ clinical-medicine-recommendation/
 │   └── app.py                        # Streamlit web user dashboard setup
 └── requirements.txt                  # Consolidated system dependencies array
 
-##📈 Model Performance & Evaluation
+---
+## 📈 Model Performance & Evaluation
 By migrating from a rigid $40\%$ dropout state down to a highly responsive $10\%$ configuration and running for 250 epochs, the model successfully avoids underfitting, drastically improving global True Positive metrics on unknown test sets.
 
 Simple Consolidated Confusion Matrices (Collapsed over Multi-Label Dimensions)Training Set Performance:
@@ -93,8 +95,8 @@ Test Set Performance (Unseen Data):
 • Consolidated Matrix            : [[TN: 1060   FP: 20]
                                     [FN:   11   TP: 169]]
 
-
-##🚀 Installation & Setup
+---
+## 🚀 Installation & Setup
 Prerequisites
 Python 3.9+
 
