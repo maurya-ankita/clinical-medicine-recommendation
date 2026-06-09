@@ -26,8 +26,6 @@ The entire architecture is decoupled into an enterprise-ready format, featuring 
 
 ## 🏗️ System Architecture
 
-
-
 The system workflow is structured into isolated structural layers to decouple model dependencies from serving environments:
 
 ```text
@@ -56,11 +54,11 @@ The system workflow is structured into isolated structural layers to decouple mo
 │   FastAPI Serving Engine  ───►  Interactive Streamlit UI     │
 │   (Port: 8000 /predict)         (Real-time Visualization)   │
 └─────────────────────────────────────────────────────────────┘
-
+```
 ---
 
 ## Project Structure
-
+```text
 clinical-medicine-recommendation/
 ├── data/
 │   └── synthetic_clinical_data.csv   # The 300-row multi-label training set
@@ -77,11 +75,12 @@ clinical-medicine-recommendation/
 ├── frontend/
 │   └── app.py                        # Streamlit web user dashboard setup
 └── requirements.txt                  # Consolidated system dependencies array
-
+```
 ---
 ## 📈 Model Performance & Evaluation
 By migrating from a rigid $40\%$ dropout state down to a highly responsive $10\%$ configuration and running for 250 epochs, the model successfully avoids underfitting, drastically improving global True Positive metrics on unknown test sets.
 
+```text
 Simple Consolidated Confusion Matrices (Collapsed over Multi-Label Dimensions)Training Set Performance:
 • Subset Accuracy (Exact Match) : 0.9450
 • Macro F1-Score Score           : 0.9520
@@ -94,6 +93,7 @@ Test Set Performance (Unseen Data):
 • Macro F1-Score Score           : 0.9240
 • Consolidated Matrix            : [[TN: 1060   FP: 20]
                                     [FN:   11   TP: 169]]
+```
 
 ---
 ## 🚀 Installation & Setup
