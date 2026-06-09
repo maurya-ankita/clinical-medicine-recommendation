@@ -1,0 +1,9 @@
+torch
+sentence-transformers
+pandas
+numpy
+scikit-learn
+fastapi
+uvicorn
+streamlit
+joblib
